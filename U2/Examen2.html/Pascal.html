@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Triángulo de pascal</title>
+        <style>
+            table,
+            td,
+            th,
+            tr {
+                border: 1px solid black;
+            }
+        </style>    
+    </head>
+    <body>
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-4nes{background-color:#feb3b3;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-3qe4{background-color:#a7cf33;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-sw2x{background-color:#fff7a6;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-zme7{background-color:#ffce93;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-4m7d{background-color:#fff381;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-1am4{background-color:#9aff3d;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-wx1z{background-color:#fef6af;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-wnle{background-color:#fedcb3;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-mmj5{background-color:#ff9090;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-nwff{background-color:#ffc9b4;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+            .tg .tg-3fuc{background-color:#fe7e73;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-9jvr{background-color:#ff7272;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-mowg{background-color:#fcbe9f;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-e7a0{background-color:#ffd8c4;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-bryd{background-color:#ffcfa6;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-hgyj{background-color:#d9ff6c;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-y5mt{background-color:#e1fe8e;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-eznd{background-color:#fff5b7;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-qnea{background-color:#e0ff88;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-dh9i{background-color:#fff48a;border-color:inherit;text-align:center;vertical-align:top}
+            .tg .tg-6fw3{background-color:#c7e869;border-color:inherit;text-align:center;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-0pky"></th>
+                <th class="tg-c3ow" colspan="24">Triángulo de pascal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-c3ow">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-3fuc" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">2</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">3</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-mmj5" colspan="2">2</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">4</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-4nes" colspan="2">3</td>
+                <td class="tg-4nes" colspan="2">3</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">5</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-zme7" colspan="2">4</td>
+                <td class="tg-wnle" colspan="2">6</td>
+                <td class="tg-zme7" colspan="2">4</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">6</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-mowg" colspan="2">5</td>
+                <td class="tg-4m7d" colspan="2">10</td>
+                <td class="tg-4m7d" colspan="2">10</td>
+                <td class="tg-mowg" colspan="2">5</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">7</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-e7a0" colspan="2">6</td>
+                <td class="tg-4m7d" colspan="2">15</td>
+                <td class="tg-4m7d" colspan="2">20</td>
+                <td class="tg-4m7d" colspan="2">15</td>
+                <td class="tg-e7a0" colspan="2">6</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">8</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-nwff" colspan="2">7</td>
+                <td class="tg-4m7d" colspan="2">21</td>
+                <td class="tg-4m7d" colspan="2">35</td>
+                <td class="tg-4m7d" colspan="2">35</td>
+                <td class="tg-4m7d" colspan="2">21</td>
+                <td class="tg-nwff" colspan="2">7</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">9</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-bryd" colspan="2">8</td>
+                <td class="tg-sw2x" colspan="2">28</td>
+                <td class="tg-hgyj" colspan="2">56</td>
+                <td class="tg-y5mt" colspan="2">70</td>
+                <td class="tg-hgyj" colspan="2">56</td>
+                <td class="tg-wx1z" colspan="2">28</td>
+                <td class="tg-bryd" colspan="2">8</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">10</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-eznd" colspan="2">9</td>
+                <td class="tg-sw2x" colspan="2">36</td>
+                <td class="tg-hgyj" colspan="2">84</td>
+                <td class="tg-qnea" colspan="2">126</td>
+                <td class="tg-qnea" colspan="2">126</td>
+                <td class="tg-hgyj" colspan="2">84</td>
+                <td class="tg-wx1z" colspan="2">36</td>
+                <td class="tg-eznd" colspan="2">9</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">11</td>
+                <td class="tg-c3ow"></td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-dh9i" colspan="2">10</td>
+                <td class="tg-sw2x" colspan="2">45</td>
+                <td class="tg-hgyj" colspan="2">120</td>
+                <td class="tg-6fw3" colspan="2">210</td>
+                <td class="tg-6fw3" colspan="2">252</td>
+                <td class="tg-6fw3" colspan="2">210</td>
+                <td class="tg-hgyj" colspan="2">120</td>
+                <td class="tg-wx1z" colspan="2">45</td>
+                <td class="tg-dh9i" colspan="2">10</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-c3ow"></td>
+              </tr>
+              <tr>
+                <td class="tg-c3ow">12</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+                <td class="tg-4m7d" colspan="2">11</td>
+                <td class="tg-sw2x" colspan="2">55</td>
+                <td class="tg-hgyj" colspan="2">165</td>
+                <td class="tg-3qe4" colspan="2">330</td>
+                <td class="tg-1am4" colspan="2">462</td>
+                <td class="tg-1am4" colspan="2">462</td>
+                <td class="tg-3qe4" colspan="2">330</td>
+                <td class="tg-qnea" colspan="2">165</td>
+                <td class="tg-wx1z" colspan="2">55</td>
+                <td class="tg-4m7d" colspan="2">11</td>
+                <td class="tg-9jvr" colspan="2">1</td>
+              </tr>
+            </tbody>
+            </table>
+    </body>
+</html>

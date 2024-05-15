@@ -1,0 +1,152 @@
+h1 {text-align: center;}
+p { text-align: justify;}
+#hTitulo { color: lime; background-color: black;}
+
+.vt323 {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#gradColores_1 { background-image: linear-gradient(45deg,red,orange,yellow,green,blue,indigo,violet);}
+#gradColores_2 { background-image: radial-gradient(red,orange,yellow,green,blue,indigo,violet);}
+
+.button{
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 40px 20px;
+  padding: 15px 32px;
+  display: inline-block;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.button:hover{
+  color: #04AA6D;
+  background-color: paleturquoise;
+}
+
+ul{ list-style: none; padding-left: 10px;}
+ul li:nth-child(odd) { background-color: lightcoral; color: white;}
+ul li:nth-child(even) { background-color: lightseagreen; color: white;}
+ul li::before { content: "\2615";padding-right: 5px;}
+
+.tooltip{
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted crimson;
+}
+
+.tooltip .tooltiptext{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 125px;
+  text-align: center;
+  padding: 2px;
+  border: 1px solid gray;
+  background-color: #04AA6D;
+}
+
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+
+.efecto{
+  background-color: aquamarine;
+  width: fit-content;
+  border: 2px solid black;
+  height: 100%;
+  font-size: 100%;
+  transition: height 0.5s, font-size 0.5s, background-color 1.0s;
+}
+
+.efecto:hover{
+  background-color: lightgreen;
+  width: fit-content;
+  height: 170%;
+  font-size: 170%;
+}
+
+.rainbow1{
+  text-align: center;
+  vertical-align: middle;
+  border: 2px dotted gray;
+  width: 200px;
+  height: 50px;
+  animation-name: rgb;
+  animation-duration: 3.0s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rgb {
+  0%{ background-color: green; }
+  19%{ background-color: yellow; }
+  34%{ background-color: orange; }
+  49%{ background-color: red; }
+  69%{ background-color: purple; }
+  83%{ background-color: blue; }
+  100%{ background-color: green; }
+}
+.barraProgreso {
+  height: 25px; width: 100%; background-color: gray;
+  color: black;font-size: 125%; font-weight: bold; text-align: center;
+  text-transform: uppercase; animation-timing-function:  linear; animation-direction: reverse;
+  animation-name: progreso; animation-duration: 10s; animation-delay: 5s;
+}
+@keyframes progreso{
+  0% {background-color: white; width: 0%;}
+  33% {background-color: red; width: 33%;}
+  66% {background-color: gold; width: 66%;}
+  99% {background-color: darkgreen; width: 99%;}
+}
+#element{
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transition: transform 2.5s;
+  transform: rotate3d(1, 1, 1, 30deg);
+  margin: 50px auto;
+}
+#element:hover, #element:focus{
+  transform: rotate3d(1, 1, 1, 180deg);
+}
+.face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  backface-visibility: inherit;
+  font-size: 60px;
+  color: black;
+}
+.right{
+  background: rgba(210, 0, 0, 0.7);
+  transform: rotateY(90deg) translateZ(50px);
+}
+.left{
+  background: rgba(0, 0, 210, 0.7);
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.front{
+  background: rgba(90, 90, 90, 0.7);
+  transform: translateZ(50px);
+}
+.back{
+  background: rgba(0, 210, 0, 0.7);
+  transform: rotateY(180deg) translateZ(50px);
+}
+.top{
+  background: rgba(210, 210, 0, 0.7);
+  transform: rotateX(90deg) translateZ(50px);
+}
+.bottom{
+  background: rgba(210, 0, 210, 0.7);
+  transform: rotateX(-90deg) translateZ(50px);
+}

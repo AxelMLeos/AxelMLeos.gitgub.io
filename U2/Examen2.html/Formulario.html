@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <fieldset >
+            <h2>Speaker Submision</h2>
+            <h4 style="color: gray;">Want to speak at our fake conference?<br>fill out this form.</h4>
+        </fieldset>
+    
+<form class="form-horizontal" >
+    <fieldset >
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Nombre1">Name</label>  
+      <div class="col-md-5">
+      <input id="Nombre1" name="Nombre1" type="text" placeholder="" class="form-control input-md">
+        
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Correo">Email</label>  
+      <div class="col-md-5">
+      <input id="Correo" name="Correo" type="text" placeholder="you@example.com" class="form-control input-md">
+        
+      </div>
+    </div>
+    
+    <!-- Multiple Radios (inline) -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="radios">Type of Talk</label>
+      <div class="col-md-4"> 
+        <label class="radio-inline" for="radios-0">
+          <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+          Main Stage
+        </label> 
+        <label class="radio-inline" for="radios-1">
+          <input type="radio" name="radios" id="radios-1" value="2">
+          Workshop
+        </label>
+      </div>
+    </div>
+    
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Camisa">T-Shirt Size</label>
+      <div class="col-md-5">
+        <select id="Camisa" name="Camisa" class="form-control">
+          <option value="1">Extra Small</option>
+          <option value="2">Small</option>
+          <option value="3">Big</option>
+          <option value="4">Extra Big</option>
+        </select>
+      </div>
+    </div>
+    
+    <!-- Textarea -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textarea">Abstract</label>
+      <div class="col-md-4">                     
+        <textarea class="form-control" id="textarea" name="textarea"></textarea>
+        <br>
+        <span class="help-block">Describe your talk in 500 words or less</span>  
+        
+      </div>
+    </div>
+    
+   
+    
+    <!-- Multiple Checkboxes (inline) -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="checkboxes"></label>
+      <div class="col-md-4">
+        <label class="checkbox-inline" for="checkboxes-0">
+          <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+          I'm actualy avaliable the date of the talk
+        </label>
+      </div>
+    </div>
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="singlebutton"></label>
+      <div class="col-md-4">
+        <button id="singlebutton" name="singlebutton" class="btn btn-primary" style="background-color: lightblue;">Submit</button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+    </body>
+</html>
