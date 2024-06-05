@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/bootstrap.min.css">
+	  <link rel="stylesheet" href="./style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>UPSLP - Misión y Valores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            background: #fff;
+        }
+        body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: auto; 
+        box-sizing: border-box;
+        }
+        .header {
+            background-color: #000080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav {
+            background-color: #3B3B98;
+            overflow: hidden;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            text-transform: uppercase;
+            scroll-snap-type: y mandatory;
+            position: relative;
+            height: 100%;
+            overflow-y: scroll;
+        }
+        .content h1 {
+            position: relative;
+            color: #000;
+            font: 900 60px Montserrat;
+            text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+        .content p {
+            color: #000;
+            font: 18px Montserrat;
+            text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: justify;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .concept {
+            padding: 2em;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            scroll-snap-align: center;
+        }
+        .footer {
+            background-color: #2E2E2E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .quick-navigation, .footer .stay-connected, .footer .get-in-touch {
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a {
+            text-decoration: none;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: transparent;
+            border: 1px dashed #fff;
+            color: #fff;
+            margin: 5px;
+        }
+        footer a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        footer a .icons {
+            margin-top: 12px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .dropdown-menu{
+        position: relative;
+        top: 150%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 160px;
+        padding: 5px 0;
+        margin: 2px 0 0;
+        list-style: none;
+        font-size: 15px;
+        text-align: left;
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+        -webkit-background-clip: padding-box;
+                background-clip: padding-box;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>UPSLP</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html">INICIO</a>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">UNIVERSIDAD<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <!--<li><a href="presentacion.html" id="p1_11" return false;">Presentación</a></li>-->
+              <li><a href="historia.html" id="p1_12">Historia</a></li>
+              <li><a href="mision.html" id="mision">Misión</a></li>
+              <li><a href="vision.html" id="p1_14">Visión</a></li>
+            </ul>
+          </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">OFERTA EDUCATIVA<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="ofertaEdu.html" id="p2_11">Plan de estudios</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CULTURA Y DEPORTES<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="Cultura_y_deporte.html" id="p3_11">Cursos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">VINCULACIÓN<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="tramites.html" id="p1_1">Tramites de egreso</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">COMUNIDAD<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="aspirantes.html" id="p3_11">Aspirantes</a></li>
+                <li><a href="estudiantes.html" id="p3_11">Estudiantes</a></li>
+                <li><a href="docentes.html" id="p3_11">Docentes</a></li>
+                <li><a href="administrativos.html" id="p3_11">Administrativos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ITERACCIÓN Y AYUDA<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="Contacto.html" id="p3_11" >Contacto</a></li>
+              <li><a href="chatbot (1).html" id="p3_12" >FAQ'S Y Chatbot</a></li>
+            </ul>
+          </li>
+    </div>
+    <div class="content" >
+        <center>
+        <h2>Licenciatura en Administración y Gestión (LAG)</h2>
+        <h3>Nivel:</h3>
+        <p style="text-align: center;">Licenciatura</p>
+        <h3>Título otorgado:</h3>
+        <p style="text-align: center;">Licenciado en Administración y Gestión.</p>
+        <h3>Duración:</h3>
+        <p style="text-align: center;">9 Semestres</p>
+        <br>
+        <p style="text-align: center;">Plan de Estudios</p>
+        <img src="planlag.jpg" alt="planiti">
+        <h3>Perfil de egreso:</h3>
+        <p style="text-align: center;">El Licenciado en Administración y Gestión es un profesionista con una alta capacidad de análisis, mente estratégica y visión global. Cuenta con una sólida formación integral que le permite ser un líder orientado a resultados y responder a los retos que enfrentan las organizaciones en un contexto global y dinámico, de alta competitividad internacional. Es competente para diseñar, evaluar e implementar estrategias, innovar y mejorar la administración y gestión de empresas y organizaciones, a fin de impactar en el desarrollo de la sociedad, demostrando un espíritu emprendedor a través de la generación de proyectos estratégicos, apoyándose en las tecnologías de información para tomar decisiones optimizando el uso de los recursos. (Perfil Profesional UPSLP; Junio 2010).</p>
+        <h3>Campo de trabajo</h3>
+        <p style="text-align: center;">Un Ingeniero en Tecnologías de la Información tiene la posibilidad de desarrollarse en industrias dedicadas tanto a la transformación como a los servicios, siempre buscando la mejora. Por lo anterior puede contratarse en: </p>
+        <br><p style="text-align: center;">
+            ABB México, San Luis Potosí.<br>
+            ADECCO, S.A., de C.V.<br>
+            Aluprint S. de R. L. de C. V.,<br>
+            Ankara Hotels & Suites.<br>
+            Asociación de Colonos del Fraccionamiento Potosino de Golf. A.C.<br>
+            Asociación Mexicana de Ventas Directas, A.C.<br>
+            Autotransportes el Bisonte, S.A., de C.V.<br>
+            BARCEL, S.A., de C.V.<br>
+            BBVA Bancomer en San Luis Potosí.<br>
+            BIMBO DE SAN LUIS POTOSI, S.A., de C.V<br>
+            Cal Química Mexicana, S.A de C.V.<br>
+            CARRANCO, S.A., de C.V.<br>
+            Centro Pyme San Luis Potosí.<br>
+            Continental Tire De México, S.A., de C.V.<br>
+            CONTITECH MEXICANA, S.A., de C.V.<br>
+            Cummins, S. de R.L. de C.V.,<br>
+            Dalton Motors S.A de C.V.<br>
+            DETERSOL, S.A., de C.V.<br>
+            DICONSA S.A., de C.V.<br>
+            Draexlmaier Components Automotive de México S.R.L. de C.V.<br>
+            Emd Locomotive Company De México, S.A., de C.V.<br>
+            Estructuras Metálicas Prefabricadas, S.A., de C.V.<br>
+            Faurecia Automotive Seating, S.L.P.<br>
+            GM Motriz, S.A. de C.V.,<br>
+            Herdez S.A., de C.V.<br>
+            Laser San Luis, S.A., de C.V.<br>
+            Leiser, S. de R.I. de C.V.,<br>
+            Maxion Wheels de México<br>
+            Medica Siller, S.A., de C.V.<br>
+            Metalsa S.A de C.V.<br>
+            Nissan Grupo Torres Corzo Automotriz, S.L.P.<br>
+            Plastiglas de México, S.A., de C.V.<br>
+            Remy Componentes S. de R.L. de C.V.<br>
+            Remy Remanufacturing S.A. R.L. DE C.V.<br>
+            Ricolino S.A. de C.V.<br>
+            Teka Mexicana, S.A., de C.V.<br>
+            Universidad San Pablo. A.C.<br>
+            Valeo Sistemas Eléctricos, S.A., de C.V., Wiper Systems,<br>
+            Wabtec de México S de R.L. de C.V.<br>
+            Zoppas Industries de México, S.A., de C.V.</p>
+    </center>
+</div>
+<div class="footer">
+    <div class="quick-navigation">
+        <h2>Navegación Rápida</h2>
+    </div>
+    <div class="stay-connected">
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">Instagram</a> | 
+        <a href="#">YouTube</a>
+    </div>
+    <div class="get-in-touch">
+        <h2>Contacto</h2>
+        <p>Urbano Villalón num.500, Col. La Ladrillera, San Luis Potosí, S.L.P. México, C.P. 78363<br> 
+            Conmutador: (444) 870 - 21 - 00<br>
+            Atención Politécnica: politecnica@upslp.edu.mx</p>
+    </div>
+</div>
+</body>
+</html>
